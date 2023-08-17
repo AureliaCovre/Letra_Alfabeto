@@ -3,23 +3,13 @@
 
 import string as st
 
-"""a = list(st.ascii_lowercase)
-letra = input("Digite uma letra: ")
-for i in range(ord(letra)+1):
-    a.append(chr(i))
+alfabeto = st.ascii_uppercase  # Apenas as letras maiúsculas
 
-print(letra)"""
+letra = input("Digite uma letra maiúscula: ")
 
-alfabeto = st.ascii_letters
-letra = input("Digite uma letra: ")
-#valor = (ord(letra)+1)
-#print(valor)
-print(alfabeto.find(letra))
+posicao = alfabeto.find(letra) + 1
 
-"""for x in alfabeto:
-    letra = +1
-    print(alfabeto.find(letra))"""
-
-#print(ord(letra))
-#print(alfabeto.find(letra))
-#print(alfabeto.ord(letra))
+if posicao > 0:
+    print(posicao)
+else:
+    print("Por favor, digite uma letra maiúscula válida.")
